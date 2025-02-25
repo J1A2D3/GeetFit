@@ -14,7 +14,13 @@
    
    Agenda and Minutes wil be taken by group member assigned and done via google docs
    
-   Scrum Master will be the enforcer but team members are responsible for being accountable. 
+   Scrum Master will be the enforcer but team members are responsible for being accountable.
+
+
+
+   Signed by:
+      Roshdan Adetunji
+   
    
    
    
