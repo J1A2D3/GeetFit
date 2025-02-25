@@ -1,4 +1,2 @@
-### The persona name may be a potential user group
-### At least two pain points
-### At least five demographic descriptors
-### A solution for each pain point
+ [Personas Grid](https://docs.google.com/presentation/d/1LfQqi2kAbgBqwBNurwrC-amytuk-W6ePD8aPcWVRiTo/edit?usp=sharing).
+
