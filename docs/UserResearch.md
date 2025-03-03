@@ -6,8 +6,8 @@
 
 
 ## Observation 2:
--The majority of respondents fall within the 18-24 age group.
--Out of 52 responses, 94.2% are in the 18-24 age group.
+- The majority of respondents fall within the 18-24 age group.
+- Out of 52 responses, 94.2% are in the 18-24 age group.
 
 
 ## Observation 3:
