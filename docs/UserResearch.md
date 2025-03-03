@@ -10,4 +10,3 @@
 ## Observation 3:
 - The AI features should be free
 - Supporting Data: 21% of survey participants said no and 54% of survey participants of participants said that it depended on the price
-- Team Action (if any): None needed
