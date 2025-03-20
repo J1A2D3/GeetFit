@@ -16,3 +16,4 @@ Average time to log a meal
 Feature usage rate (e.g., meal suggestions, progress reports).
 
 Click through rate (login -> calorie counter -> meal plan)
+ 
