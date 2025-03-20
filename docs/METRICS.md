@@ -9,9 +9,9 @@ Adoption Rate
 
 Monthly Active Users
 
-Retention Rate
+Retention Rate - Default tracking option on firebase
 
-Average time to log a meal
+Average time to log a meal - can see how long a user stays on the log meal screen by checking time entered the page and time left the page
 
 Feature usage rate (e.g., meal suggestions, progress reports).
 
