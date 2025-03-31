@@ -22,9 +22,9 @@
   - **Data Collection**: A custom event in Firebase Analytics triggers whenever users follow the path: (1) Login → (2) Calorie Counter → (3) Meal Plan.  
   - **Storage**: We increment counters each time the event is triggered and compare it to the number of logins to generate the CTR.
 
-- **Average Time to Log a Meal**  
-  - **Data Collection**: Record timestamp when the user enters the “Log Meal” screen and when they leave it.  
-  - **Storage**: Data is stored in Firebase (via a custom event) and aggregated to compute the average time spent logging a meal.
+- **Crash Rate**  
+  - **Data Collection**: Default Firebase Analytic  
+  - **Storage**: Data is stored in Firebase.
 
 ---
 
