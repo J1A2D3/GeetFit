@@ -51,3 +51,67 @@ To test this, an ABtest would be created where a hex value for the background co
 - Variations:
   - Control (A): Original logo  
   - Variant (B): New logo design
+ 
+
+---
+## Jad A
+## A/B Test Proposal: Meal Plan Flow Optimization
+
+### A/B Test Name
+**Meal Plan Flow Optimization**
+
+### User Story Number
+**US3 (Meal Plan Creation and Navigation)**
+
+### Metrics (HEART Framework)
+- **Task Success**: Click-through rate from calorie counter to meal plan
+- **Engagement**: Frequency of interaction with meal planning features
+- **Happiness**: NPS score after completing a meal plan
+
+---
+
+### Hypothesis
+We believe that streamlining the transition from the calorie counter to the meal planning screen will improve the user experience by reducing friction and saving time. This improvement will lead to a higher task success rate, more engaged users, and better satisfaction reflected in the NPS score.
+
+---
+
+### What Problem Are We Trying to Solve?
+User testing and analytics show a drop-off in engagement between logging calories and proceeding to create a meal plan. The current flow separates these into multiple steps and screens, which may cause confusion or fatigue. Since the meal plan feature is a core value proposition, any friction in this flow has a significant negative impact on both task success and user perception of the app.
+
+By making the meal plan screen more accessible immediately after logging calories—on the same screen—we reduce steps and streamline the process, likely increasing user interaction with the feature.
+
+---
+
+### Experiment
+
+- **Experiment Setup**: Use **Firebase Remote Config** to toggle between the two flows.
+- **Audience**: 50% of users will experience the current (control) version, and 50% will see the variant.
+- **Duration**: At least 2 weeks or until statistically significant results are collected.
+
+**Tracking via Firebase Analytics:**
+- `event_log_calories`
+- `event_calorie_counter_to_meal_plan_click`
+- `event_meal_plan_created`
+- `event_nps_submitted`
+
+**Conversion Funnel Tracked**:
+1. Log calories  
+2. Click to create a meal plan  
+3. Submit NPS feedback after task
+
+---
+
+### Variations
+
+#### Control (A):
+- Existing flow: Log calories → tap button to go to separate meal plan screen.
+
+#### Variant (B):
+- New flow: After logging calories, the user sees a side panel or embedded section with suggested meals and a button to instantly generate a meal plan—all on the same screen.
+
+---
+
+### GitHub Integration
+- **PBI Task Title**: `A/B Testing: Meal Plan Flow Optimization`
+- **Labels**: `A/B Test`, `US3`
+
