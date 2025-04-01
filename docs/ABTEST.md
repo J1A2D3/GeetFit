@@ -51,10 +51,8 @@ To test this, an ABtest would be created where a hex value for the background co
 - Variations:
   - Control (A): Original logo  
   - Variant (B): New logo design
- 
 
 ---
-## Jad A
 ## A/B Test Proposal: Meal Plan Flow Optimization
 
 ### A/B Test Name
@@ -109,9 +107,4 @@ By making the meal plan screen more accessible immediately after logging calorie
 #### Variant (B):
 - New flow: After logging calories, the user sees a side panel or embedded section with suggested meals and a button to instantly generate a meal plan—all on the same screen.
 
----
-
-### GitHub Integration
-- **PBI Task Title**: `A/B Testing: Meal Plan Flow Optimization`
-- **Labels**: `A/B Test`, `US3`
 
