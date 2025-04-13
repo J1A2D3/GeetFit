@@ -1,5 +1,5 @@
 - [US1: User Account Creation](https://docs.google.com/presentation/d/1Z4u_W7qNt7kXTlypI_8DSAd7OcwUQOUrPzs4yWSzi50/edit?usp=sharing)
 - [US2: User Login](https://website-name.com)
 - [US3: Backend Management](https://website-name.com)
-- [US4: {Golden Path description}](https://website-name.com)
+- [US4: {Golden Path description}](https://docs.google.com/presentation/d/16pGrZmzojOQnTBqiq-lYvWxYxxfOBWeM99czWfBdVOw/edit?usp=sharing)
 - [US5: ...]()
