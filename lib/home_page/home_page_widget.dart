@@ -405,7 +405,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        '',
+                                        'Goals',
                                         style: FlutterFlowTheme.of(context)
                                             .titleLarge
                                             .override(
@@ -417,8 +417,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             20.0, 14.0, 20.0, 0.0),
                                         child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Go_To_AI pressed ...');
+                                          onPressed: () async {
+                                            logFirebaseEvent(
+                                                'HOME_PAGE_PAGE_Go_To_AI_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Go_To_AI_navigate_to');
+
+                                            context.pushNamed(
+                                                DailyGoalsWidget.routeName);
                                           },
                                           text: 'Go To',
                                           options: FFButtonOptions(

@@ -69,6 +69,12 @@ class FFAppState extends ChangeNotifier {
     _loginAmt = value;
     prefs.setInt('ff_loginAmt', value);
   }
+
+  String _zenQuote = '';
+  String get zenQuote => _zenQuote;
+  set zenQuote(String value) {
+    _zenQuote = value;
+  }
 }
 
 void _safeInit(Function() initializeField) {

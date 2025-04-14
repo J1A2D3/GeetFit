@@ -56,6 +56,31 @@ class CalorieNinjaCall {
       ) as List?;
 }
 
+class ZenQuotesCall {
+  static Future<ApiCallResponse> call({
+    String? quote = '',
+  }) async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'ZenQuotes',
+      apiUrl: 'https://zenquotes.io/api/random',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+
+  static String? quote(dynamic response) => castToType<String>(getJsonField(
+        response,
+        r'''$[:].q''',
+      ));
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

@@ -126,6 +126,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           name: MyAIWidget.routeName,
           path: MyAIWidget.routePath,
           builder: (context, params) => MyAIWidget(),
+        ),
+        FFRoute(
+          name: DailyGoalsWidget.routeName,
+          path: DailyGoalsWidget.routePath,
+          builder: (context, params) => DailyGoalsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
