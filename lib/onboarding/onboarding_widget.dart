@@ -220,6 +220,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                       builder: (context) => Container(
                         width: double.infinity,
                         child: TextFormField(
+                          key: ValueKey('FullName_nkc6'),
                           controller: _model.fullNameTextController,
                           focusNode: _model.fullNameFocusNode,
                           onChanged: (_) => EasyDebounce.debounce(

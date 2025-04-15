@@ -112,6 +112,7 @@ class _SignupPageWidgetState extends State<SignupPageWidget> {
                               Container(
                                 width: double.infinity,
                                 child: TextFormField(
+                                  key: ValueKey('Signup-Email_mq81'),
                                   controller: _model.signupEmailTextController,
                                   focusNode: _model.signupEmailFocusNode,
                                   onChanged: (_) => EasyDebounce.debounce(
@@ -211,6 +212,7 @@ class _SignupPageWidgetState extends State<SignupPageWidget> {
                               Container(
                                 width: double.infinity,
                                 child: TextFormField(
+                                  key: ValueKey('Signup-Password_dqmu'),
                                   controller:
                                       _model.signupPasswordTextController,
                                   focusNode: _model.signupPasswordFocusNode,
@@ -302,6 +304,7 @@ class _SignupPageWidgetState extends State<SignupPageWidget> {
                               Container(
                                 width: double.infinity,
                                 child: TextFormField(
+                                  key: ValueKey('Signup-Confirm-Password_vmbj'),
                                   controller: _model
                                       .signupConfirmPasswordTextController,
                                   focusNode:
@@ -399,6 +402,7 @@ class _SignupPageWidgetState extends State<SignupPageWidget> {
                         ),
                       ),
                       FFButtonWidget(
+                        key: ValueKey('Register_Button_15aj'),
                         onPressed: () async {
                           logFirebaseEvent(
                               'SIGNUP_PAGE_PAGE_Register_Button_ON_TAP');

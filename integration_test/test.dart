@@ -70,7 +70,7 @@ void main() async {
     expect(find.byKey(const ValueKey('Text_vufi')), findsWidgets);
   });
 
-  testWidgets('signup user already exists', (WidgetTester tester) async {
+  testWidgets('signup user ', (WidgetTester tester) async {
     _overrideOnError();
 
     await tester.pumpWidget(ChangeNotifierProvider(
@@ -81,10 +81,16 @@ void main() async {
     ));
     await GoogleFonts.pendingFonts();
 
-    await tester.enterText(find.text('Email...'), 'a@a.com');
-    await tester.enterText(find.text('Password...'), 'abcdefgHIjkl');
-    await tester.enterText(find.text('Confirm Password...'), 'abcdefgHIjkl');
-    await tester.tap(find.text('Register'));
+    await tester.enterText(
+        find.byKey(const ValueKey('Signup-Email_mq81')), 'a@a.com');
+    await tester.enterText(
+        find.byKey(const ValueKey('Signup-Password_dqmu')), 'abcdefgHIjkl');
+    await tester.enterText(
+        find.byKey(const ValueKey('Signup-Confirm-Password_vmbj')),
+        'abcdefgHIjkl');
+    await tester.tap(find.byKey(const ValueKey('Register_Button_15aj')));
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    expect(find.byKey(const ValueKey('FullName_nkc6')), findsWidgets);
   });
 
   testWidgets('Meal  Tracking Test', (WidgetTester tester) async {
@@ -109,7 +115,7 @@ void main() async {
     await tester.tap(find.byKey(const ValueKey('Set_Meal_1_pxn6')));
     await tester.enterText(
         find.byKey(const ValueKey('Set_Meal_1_pxn6')), 'rice');
-    await tester.pumpAndSettle();
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
     expect(find.byKey(const ValueKey('Set_Meal_1_pxn6')), findsWidgets);
   });
 }
