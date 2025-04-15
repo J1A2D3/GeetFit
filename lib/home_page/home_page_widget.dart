@@ -157,6 +157,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 14.0, 20.0, 0.0),
                                           child: FFButtonWidget(
+                                            key:
+                                                ValueKey('Go_To_MealPlan_kpxv'),
                                             onPressed: () async {
                                               logFirebaseEvent(
                                                   'HOME_PAGE_PAGE_Go_To_MealPlan_ON_TAP');

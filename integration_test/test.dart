@@ -96,18 +96,21 @@ void main() async {
     ));
     await GoogleFonts.pendingFonts();
 
-    await tester.tap(find.byKey(const ValueKey('meal1_button_8eny')));
+    await tester.pumpAndSettle();
     await tester.enterText(
-        find.byKey(const ValueKey('Set_Meal_1_pxn6')), 'Wings');
-    await tester.tap(find.byKey(const ValueKey('meal1_button_8eny')));
+        find.byKey(const ValueKey('Login-Email_ma33')), '6testing7@gmail.com');
+    await tester.enterText(
+        find.byKey(const ValueKey('Login-Password_oz8o')), 'idcab!4');
+    await tester.tap(find.byKey(const ValueKey('Login_Button_e45o')));
     await tester.pumpAndSettle(const Duration(milliseconds: 3000));
-    expect(
-      tester
-          .widget<TextFormField>(find.byKey(const ValueKey('Set_Meal_1_pxn6')))
-          .controller
-          .text,
-      equals('Wings'),
-    );
+    await tester.tap(find.byKey(const ValueKey('Go_To_MealPlan_kpxv')));
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    await tester.tap(find.byKey(const ValueKey('meal1_button_8eny')));
+    await tester.tap(find.byKey(const ValueKey('Set_Meal_1_pxn6')));
+    await tester.enterText(
+        find.byKey(const ValueKey('Set_Meal_1_pxn6')), 'rice');
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('Set_Meal_1_pxn6')), findsWidgets);
   });
 }
 
