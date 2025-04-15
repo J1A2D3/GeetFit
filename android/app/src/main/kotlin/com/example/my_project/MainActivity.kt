@@ -1,4 +1,4 @@
-package com.mycompany.geetfit
+package com.uricsc305.geetfit
 
 import io.flutter.embedding.android.FlutterActivity
 

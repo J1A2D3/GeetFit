@@ -187,7 +187,7 @@ class _DailyGoalsWidgetState extends State<DailyGoalsWidget> {
                 FlutterFlowIconButton(
                   borderRadius: 8.0,
                   buttonSize: 40.0,
-                  fillColor: FlutterFlowTheme.of(context).primary,
+                  fillColor: FlutterFlowTheme.of(context).primaryBackground,
                   icon: Icon(
                     Icons.arrow_back,
                     color: FlutterFlowTheme.of(context).primaryText,
