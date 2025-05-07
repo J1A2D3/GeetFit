@@ -90,7 +90,7 @@ void main() async {
         'abcdefgHIjkl');
     await tester.tap(find.byKey(const ValueKey('Register_Button_15aj')));
     await tester.pumpAndSettle(const Duration(milliseconds: 3000));
-    expect(find.byKey(const ValueKey('FullName_nkc6')), findsWidgets);
+    expect(find.text('Full Name'), findsWidgets);
   });
 
   testWidgets('Meal  Tracking Test', (WidgetTester tester) async {
