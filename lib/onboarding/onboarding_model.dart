@@ -21,6 +21,10 @@ class OnboardingModel extends FlutterFlowModel<OnboardingWidget> {
   TextEditingController? usernameTextController;
   String? Function(BuildContext, String?)? usernameTextControllerValidator;
   DateTime? datePicked;
+  // State field(s) for Height widget.
+  FocusNode? heightFocusNode;
+  TextEditingController? heightTextController;
+  String? Function(BuildContext, String?)? heightTextControllerValidator;
   // State field(s) for Weight widget.
   FocusNode? weightFocusNode;
   TextEditingController? weightTextController;
@@ -41,6 +45,9 @@ class OnboardingModel extends FlutterFlowModel<OnboardingWidget> {
 
     usernameFocusNode?.dispose();
     usernameTextController?.dispose();
+
+    heightFocusNode?.dispose();
+    heightTextController?.dispose();
 
     weightFocusNode?.dispose();
     weightTextController?.dispose();

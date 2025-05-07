@@ -19,6 +19,10 @@ class FFAppState extends ChangeNotifier {
     _safeInit(() {
       _loginAmt = prefs.getInt('ff_loginAmt') ?? _loginAmt;
     });
+    _safeInit(() {
+      _calorieResetTime =
+          prefs.getInt('ff_calorieResetTime') ?? _calorieResetTime;
+    });
   }
 
   void update(VoidCallback callback) {
@@ -74,6 +78,13 @@ class FFAppState extends ChangeNotifier {
   String get zenQuote => _zenQuote;
   set zenQuote(String value) {
     _zenQuote = value;
+  }
+
+  int _calorieResetTime = 100;
+  int get calorieResetTime => _calorieResetTime;
+  set calorieResetTime(int value) {
+    _calorieResetTime = value;
+    prefs.setInt('ff_calorieResetTime', value);
   }
 }
 

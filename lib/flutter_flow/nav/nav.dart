@@ -131,6 +131,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           name: DailyGoalsWidget.routeName,
           path: DailyGoalsWidget.routePath,
           builder: (context, params) => DailyGoalsWidget(),
+        ),
+        FFRoute(
+          name: CalorieLossWidget.routeName,
+          path: CalorieLossWidget.routePath,
+          builder: (context, params) => CalorieLossWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -56,3 +56,46 @@ double calculateProgress(
   if (total == 0) return 0.0;
   return completed / total;
 }
+
+int? calcAge(DateTime? birthday) {
+  if (birthday == null) return null; // Return null if birthday is null
+  DateTime today = DateTime.now(); // Get the current date
+  int age =
+      today.year - birthday.year; // Calculate age based on year difference
+  if (today.month < birthday.month ||
+      (today.month == birthday.month && today.day < birthday.day)) {
+    age--; // Adjust age if birthday hasn't occurred yet this year
+  }
+  return age; // Return the calculated age
+}
+
+double? calorieLossCalculator(
+  double userWeight,
+  double met,
+  double timeSpent,
+) {
+// use this formula Calories Burned=MET×Weight (kg)×Time (hours). make sure to covert weight from lbs to kg and time from minutes to hours
+  if (timeSpent == null) {
+    return null; // Return null if timeSpent is not provided
+  }
+
+  double weightInKg = userWeight * 0.453592; // Convert weight from lbs to kg
+  double timeInHours = timeSpent / 60; // Convert time from minutes to hours
+
+  return met * weightInKg * timeInHours; // Calculate and return calories burned
+}
+
+int weeklyReset() {
+  int now = (DateTime.now().millisecondsSinceEpoch / 1000).floor();
+  return (now / 604800).floor() * 604800 + (86400 * 3);
+}
+
+bool newWeek(int pastTime) {
+  int now = (DateTime.now().millisecondsSinceEpoch / 1000).floor();
+
+  if (pastTime + 604800 < now) {
+    return true;
+  }
+
+  return false;
+}
