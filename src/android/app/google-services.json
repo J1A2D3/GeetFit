@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474957155325",
+    "project_id": "geet-fit-8oj3z6",
+    "storage_bucket": "geet-fit-8oj3z6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474957155325:android:978037840f49e5ce7fa794",
+        "android_client_info": {
+          "package_name": "com.mycompany.geetfit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa4XfppWb6d8_LMvpRfBhxakrJUCwtttk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474957155325:android:3a9d847cd33fa98d7fa794",
+        "android_client_info": {
+          "package_name": "com.uricsc305.geetfit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa4XfppWb6d8_LMvpRfBhxakrJUCwtttk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
