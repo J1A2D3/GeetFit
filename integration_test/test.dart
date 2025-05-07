@@ -46,7 +46,7 @@ void main() async {
         find.byKey(const ValueKey('Login-Password_oz8o')), 'idcab!4');
     await tester.tap(find.byKey(const ValueKey('Login_Button_e45o')));
     await tester.pumpAndSettle(const Duration(milliseconds: 3000));
-    expect(find.text('Meal Plan'), findsWidgets);
+    expect(find.byKey(const ValueKey('Image_fuwy')), findsWidgets);
   });
 
   testWidgets('Incorrect Password Attempt', (WidgetTester tester) async {
@@ -82,7 +82,7 @@ void main() async {
     await GoogleFonts.pendingFonts();
 
     await tester.enterText(
-        find.byKey(const ValueKey('Signup-Email_mq81')), 'a@a.com');
+        find.byKey(const ValueKey('Signup-Email_mq81')), 'abcd@azzz.com');
     await tester.enterText(
         find.byKey(const ValueKey('Signup-Password_dqmu')), 'abcdefgHIjkl');
     await tester.enterText(

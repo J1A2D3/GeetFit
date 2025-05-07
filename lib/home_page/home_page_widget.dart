@@ -91,6 +91,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.asset(
+                      key: ValueKey('Image_fuwy'),
                       'assets/images/GeetFitLogo.png',
                       width: 160.0,
                       fit: BoxFit.contain,
