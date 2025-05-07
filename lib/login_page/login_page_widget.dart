@@ -84,7 +84,6 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       Align(
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Text(
-                          key: ValueKey('Text_vufi'),
                           'Login',
                           style:
                               FlutterFlowTheme.of(context).titleLarge.override(

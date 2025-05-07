@@ -66,8 +66,7 @@ void main() async {
         find.byKey(const ValueKey('Login-Password_oz8o')), 'test');
     await tester.pumpAndSettle(const Duration(milliseconds: 5000));
     await tester.tap(find.byKey(const ValueKey('Login_Button_e45o')));
-    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
-    expect(find.byKey(const ValueKey('Text_vufi')), findsWidgets);
+    expect(find.text('Login'), findsWidgets);
   });
 
   testWidgets('signup user ', (WidgetTester tester) async {
